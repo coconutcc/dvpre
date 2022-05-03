@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>NYC JOB Market Visualization</h3>
+					<img src="nyc.jpeg" alt="nyc" width="300" height="300">
+					<p>Class: IS 545 Advanced Data Visualization</p>
+					<p>Presenter: Xiaotong Hu</p>
+				</section>
+				<section>
+					<h3>Overview</h3>
+					<p>Dataset: current job postings available on the City of New York’s official jobs site.</p>
+					<p> Features: Job ID, Agency, Business Title, Job Category, Career Level, Work Location, Posting Date, Job Description, etc.</p>
+				</section>
+				<section>
+					<p>NYC Job Market Overall Trend</p>
+					<img src="visualization (1).png" alt="visualization (1)">
+				</section>
+				<section>
+					<p>NYC Job Market Temporal Trend</p>
+					<img src="visualization (2).png" alt="visualization (2)">
+				</section>
+				<section>
+					<p>Job Category & Agency Analysis</p>
+					<style>
+						.p_iframe iframe {
+						  width:100%;
+						  height:300px;
+					  }
+					  </style>
+					  
+					  <div class="p_iframe">
+					  <iframe frameborder="0" seamless='seamless' scrolling=no src="visualization (2).html"></iframe>
+					  </div>
+				</section>
+				<section>
+					<p>NYC Job Market Location View</p>
+					<style>
+						.p_iframe iframe {
+						  width:100%;
+						  height:500px;
+					  }
+					  </style>
+					  
+					  <div class="p_iframe">
+					  <iframe frameborder="0" seamless='seamless' scrolling=no src="visualization (3).html"></iframe>
+					  </div>
+				</section>
+				<section>
+					<p>NYC Job Market Summary View</p>
+					<img src="visualization (5).png" alt="visualization (5)">
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
