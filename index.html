@@ -18,7 +18,7 @@
 			<div class="slides">
 				<section>
 					<h3>NYC JOB Market Visualization</h3>
-					<img src="nyc.jpeg" alt="nyc" width="300" height="300">
+					<img src="examples/assets/nyc.jpeg" alt="nyc" width="300" height="300">
 					<p>Class: IS 545 Advanced Data Visualization</p>
 					<p>Presenter: Xiaotong Hu</p>
 				</section>
@@ -28,15 +28,18 @@
 					<p> Features: Job ID, Agency, Business Title, Job Category, Career Level, Work Location, Posting Date, Job Description, etc.</p>
 				</section>
 				<section>
-					<p>NYC Job Market Overall Trend</p>
-					<img src="visualization (1).png" alt="visualization (1)">
+					<p>NYC Job Market Overall Trend - Static</p>
+					<img src="examples/assets/visualization (1).png" alt="visualization (1)">
+					<p><small>The distribution of number of jobs by agency and average salary by job category indicate which agency offers most jobs and which job category has the highest salaries. </small></p>
 				</section>
 				<section>
-					<p>NYC Job Market Temporal Trend</p>
-					<img src="visualization (2).png" alt="visualization (2)">
+					<p>NYC Job Market Temporal Trend - Static</p>
+					<img src="examples/assets/visualization (2).png" alt="visualization (2)">
+					<p><small>Seasonal trend of average salary by job category and distribution of number of jobs. </small></p>
 				</section>
 				<section>
-					<p>Job Category & Agency Analysis</p>
+					<p>Job Category & Agency Analysis - Dynamic</p>
+					<p><small>Exploration of salary range with respect to job category and agency - scroll left and right, and click on bars to view</small></p>
 					<style>
 						.p_iframe iframe {
 						  width:100%;
@@ -45,25 +48,42 @@
 					  </style>
 					  
 					  <div class="p_iframe">
-					  <iframe frameborder="0" seamless='seamless' scrolling=no src="visualization (2).html"></iframe>
+					  <iframe frameborder="0" seamless='seamless' scrolling=yes src="examples/assets/visualization (2).html"></iframe>
 					  </div>
+					
 				</section>
 				<section>
-					<p>NYC Job Market Location View</p>
+					<p>NYC Job Market Location View - Dynamic</p>
+					<p><small>NYC location distribution of number of jobs based on career levels and  average salary based on job category- scroll left and right, and click on heatmap to view</small></p>
 					<style>
 						.p_iframe iframe {
 						  width:100%;
-						  height:500px;
+						  height:300px;
 					  }
 					  </style>
 					  
 					  <div class="p_iframe">
-					  <iframe frameborder="0" seamless='seamless' scrolling=no src="visualization (3).html"></iframe>
+					  <iframe frameborder="0" seamless='seamless' scrolling=yes src="examples/assets/visualization (3).html"></iframe>
 					  </div>
+					  
 				</section>
 				<section>
-					<p>NYC Job Market Summary View</p>
-					<img src="visualization (5).png" alt="visualization (5)">
+					<p>NYC Job Market Summary View - Static</p>
+					<img src="examples/assets/visualization (5).png" alt="visualization (5)">
+				</section>
+				<section>
+					<p>NYC Job Market Summary View - Dynamic</p>
+					<p><small>Scroll horizontally and vertically to view the full visualizations</small></p>
+					<style>
+						.p_iframe iframe { 
+							width:100%; 
+							height:800px; 
+					  }
+					  </style>
+					  
+					  <div class="p_iframe">
+					  <iframe frameborder="0" seamless='seamless' scrolling=yes src="examples/assets/visualization (1).html"></iframe>
+					  </div>
 				</section>
 			</div>
 		</div>
